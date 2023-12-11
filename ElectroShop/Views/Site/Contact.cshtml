@@ -1,0 +1,70 @@
+﻿@{
+    ViewBag.Title = "Liên hệ";
+    Layout = "~/Views/Shared/_LayoutSite.cshtml";
+}
+@Html.Partial("_Nofit")
+
+<div class="section">
+    <div class="container">
+        <form id="contactForm" method="POST" action="Site/SubmitContact">
+            <div class="row">
+                <div class="col-md-7">
+                    <!-- Billing Details -->
+                    <div class="billing-details">
+                        <div class="section-title">
+                            <h3 class="title">GỬI PHẢN HỒI CHO CHÚNG TÔI</h3>
+                        </div>
+                        <div class="form-group">
+                            <input class="input" type="text" id="contactEmail" name="Fullname" placeholder="Tên">
+                        </div>
+                        <div class="form-group">
+                            <input class="input" type="email" id="contactEmail" name="Email" value=""placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input class="input" type="number"  id="contactEmail" name="Phone" placeholder="Số điện thoại">
+                        </div>
+                        <div class="form-group">
+                            <input class="input" type="text" id="contactEmail" name="Title" placeholder="Tiêu đề liên hệ">
+                        </div>
+                        <div class="form-group">
+                            <div class="order-notes">
+                                <textarea class="input" placeholder="Nội dung liên hệ" name="Detail"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" name="submit" id="sendMessage" class="primary-btn order-submit">
+                                GỬI
+                            </button>
+                        </div>
+                    </div>
+                    <!-- /Billing Details -->
+                </div>
+
+                <!-- Order Details -->
+                <div class="col-md-5 order-details">
+                    <div class="section-title text-center">
+                        <h3 class="title">LIÊN HỆ VỚI CHÚNG TÔI</h3>
+                    </div>
+                    <div class="order-summary">
+                        <div class="order-products">
+                            <div class="order-col">
+                                <div>SĐT</div>
+                                <div>0364.242.261</div>
+                            </div>
+                            <div class="order-col">
+                                <div>EMail</div>
+                                <div>lelaii200398@gmail.com</div>
+                            </div>
+                            <div class="order-col">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.7518756029754!2d106.77202411410556!3d10.83029076116026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317526ffe6203d2f%3A0xeddbc5d15e61abee!2zMTIzIMSQxrDhu51uZyBUxINuZyBOaMahbiBQaMO6LCBQaMaw4bubYyBMb25nIEIsIFF14bqtbiA5LCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1613923020279!5m2!1svi!2s" width="310" height="210" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Order Details -->
+            </div>
+        </form>
+    </div>
+</div>
